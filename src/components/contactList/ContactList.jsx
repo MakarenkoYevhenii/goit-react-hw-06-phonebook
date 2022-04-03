@@ -1,8 +1,9 @@
 import styles from '../contactList/contactForm.module.css'
 import PropTypes from 'prop-types';
 
-    const ContactList = ({names, removeHuman}) => {
+    const ContactList = ({names,removeHuman}) => {
         const elements = names.map(item => <li key={item.id} className={styles.items}>
+            
             <p className={styles.people__items}>{item.name}: {item.number}</p> <button className={styles.form__delete__button} onClick={()=>removeHuman(item.id)}>Delete</button>
         </li>);
     

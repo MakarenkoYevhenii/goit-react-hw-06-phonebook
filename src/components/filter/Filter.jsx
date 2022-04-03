@@ -1,7 +1,12 @@
 import PropTypes from 'prop-types';
 import { memo } from 'react';
-const Filter = ({ handleChange}) => {    
-    
+const Filter = ({ filter}) => {    
+
+    const handleChange=({target})=>{
+        const {value}=target
+       return filter(value)
+    }
+ 
     return (
 
         <div className="form-group">
