@@ -24,12 +24,12 @@ const App = () => {
     }
     const filteredContacts=()=>{
       const filtered=contacts.filter((e)=>{
-        return e.name.includes(filter) 
+        return e.name.toLowerCase().includes(filter.toLowerCase()) 
       })
       return filtered
     }
 
-   console.log(filteredContacts());
+  
     const removeContact = (id)=> dispatch(actions.remove(id))
     
     
