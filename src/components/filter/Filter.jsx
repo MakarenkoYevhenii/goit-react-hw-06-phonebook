@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import { memo } from 'react';
-const Filter = ({ filter}) => {    
-
-    const handleChange=({target})=>{
-        const {value}=target
-       return filter(value)
-    }
+const Filter = ({handleChange}) => {    
+    // console.log(handleChange);
+    // const handleChange=({target})=>{
+    //     const {value}=target
+    //     console.log(value);
+       
+    //     return 
+    // }
  
     return (
 
