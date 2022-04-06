@@ -4,7 +4,7 @@ import contactsReducer from "./contacts/contacts-reducer"
 
 
 const store =configureStore({
-    reducer:{contact:contactsReducer}
+    reducer:{contacts:contactsReducer}
 })
 
 
